@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Shift : MonoBehaviour
 {
+    public bool RedActive;
+    public bool BlueActive;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,11 @@ public class Shift : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            RedActive = !RedActive;
+            BlueActive = !BlueActive;
+            print("Lmao nice");
+        }
     }
 }
