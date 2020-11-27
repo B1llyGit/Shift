@@ -20,7 +20,7 @@ public class Shift : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Shift"))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             RedActive = !RedActive;
             BlueActive = !BlueActive;
