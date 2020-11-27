@@ -6,8 +6,6 @@ public class DimensionUpdate : MonoBehaviour
 {
     private GameObject Controller;
     public bool Red;
-    public Material Active;
-    public Material Inactive;
 
     // Start is called before the first frame update
     void Start()
@@ -22,14 +20,14 @@ public class DimensionUpdate : MonoBehaviour
         {
             if (Controller.GetComponent<Shift>().RedActive)
             {
-                GetComponent<Renderer>().material = Active;
+                GetComponent<Renderer>().material = Controller.GetComponent<Shift>().RActive;
                 GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
                 GetComponent<MeshRenderer>().receiveShadows = true;
                 GetComponent<BoxCollider>().enabled = true;
             }
             if (!Controller.GetComponent<Shift>().RedActive)
             {
-                GetComponent<Renderer>().material = Inactive;
+                GetComponent<Renderer>().material = Controller.GetComponent<Shift>().RInactive;
                 GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                 GetComponent<MeshRenderer>().receiveShadows = false;
                 GetComponent<BoxCollider>().enabled = false;
@@ -39,14 +37,14 @@ public class DimensionUpdate : MonoBehaviour
         {
             if (Controller.GetComponent<Shift>().BlueActive)
             {
-                GetComponent<Renderer>().material = Active;
+                GetComponent<Renderer>().material = Controller.GetComponent<Shift>().BActive;
                 GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
                 GetComponent<MeshRenderer>().receiveShadows = true;
                 GetComponent<BoxCollider>().enabled = true;
             }
             if (!Controller.GetComponent<Shift>().BlueActive)
             {
-                GetComponent<Renderer>().material = Inactive;
+                GetComponent<Renderer>().material = Controller.GetComponent<Shift>().BInactive;
                 GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                 GetComponent<MeshRenderer>().receiveShadows = false;
                 GetComponent<BoxCollider>().enabled = false;

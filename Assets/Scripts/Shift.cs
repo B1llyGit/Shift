@@ -6,6 +6,11 @@ public class Shift : MonoBehaviour
 {
     public bool RedActive;
     public bool BlueActive;
+
+    public Material BActive;
+    public Material BInactive;
+    public Material RActive;
+    public Material RInactive;
     // Start is called before the first frame update
     void Start()
     {
