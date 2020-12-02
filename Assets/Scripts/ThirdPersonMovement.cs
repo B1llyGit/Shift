@@ -15,10 +15,10 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public float speed = 12;
     public float sprintSpeed = 24;
-    public float gravity = -9.81f;
+    public float gravity = Physics.gravity.y;
     public float jumpHeight = 3;
     Vector3 velocity;
-    bool isGrounded;
+    public bool isGrounded;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
