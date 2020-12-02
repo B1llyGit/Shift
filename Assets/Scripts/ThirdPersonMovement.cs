@@ -19,6 +19,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public float jumpHeight = 3;
     Vector3 velocity;
     public bool isGrounded;
+    public bool floating = false;
 
     public Transform groundCheck;
     public float groundDistance = 0.4f;
@@ -42,7 +43,14 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         //Jumping
-        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        if (!floating)
+        {
+            isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        }
+        else
+        {
+            isGrounded = false;
+        }
 
         if (isGrounded && velocity.y < 0)
         {

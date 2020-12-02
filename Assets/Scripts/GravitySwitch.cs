@@ -8,6 +8,7 @@ public class GravitySwitch : MonoBehaviour
     public Vector3 NewGravity;
     private Vector3 Gravity;
     private GameObject Player;
+    public float Seconds;
 
     void Start()
     {
@@ -35,11 +36,12 @@ public class GravitySwitch : MonoBehaviour
         Physics.gravity = NewGravity;
         Gravity = NewGravity;
         Player.GetComponent<ThirdPersonMovement>().gravity = Gravity.y;
-        //Player.GetComponent<ThirdPersonMovement>().isGrounded = false;
+        Player.GetComponent<ThirdPersonMovement>().floating = true;
         print(Physics.gravity);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(Seconds);
         Physics.gravity = InitGravity;
         Gravity = InitGravity;
         Player.GetComponent<ThirdPersonMovement>().gravity = Gravity.y;
+        Player.GetComponent<ThirdPersonMovement>().floating = false;
     }
 }
