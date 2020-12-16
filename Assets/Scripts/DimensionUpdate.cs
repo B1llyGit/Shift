@@ -23,14 +23,28 @@ public class DimensionUpdate : MonoBehaviour
                 GetComponent<Renderer>().material = Controller.GetComponent<Shift>().RActive;
                 GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
                 GetComponent<MeshRenderer>().receiveShadows = true;
-                GetComponent<BoxCollider>().enabled = true;
+                if (GetComponent<BoxCollider>())
+                {
+                    GetComponent<BoxCollider>().enabled = true;
+                }
+                else if (GetComponent<MeshCollider>())
+                {
+                    GetComponent<MeshCollider>().enabled = true;
+                }
             }
             if (!Controller.GetComponent<Shift>().RedActive)
             {
                 GetComponent<Renderer>().material = Controller.GetComponent<Shift>().RInactive;
                 GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                 GetComponent<MeshRenderer>().receiveShadows = false;
-                GetComponent<BoxCollider>().enabled = false;
+                if (GetComponent<BoxCollider>())
+                {
+                    GetComponent<BoxCollider>().enabled = false;
+                }
+                else if (GetComponent<MeshCollider>())
+                {
+                    GetComponent<MeshCollider>().enabled = false;
+                }
             }
         }
         else
@@ -40,14 +54,28 @@ public class DimensionUpdate : MonoBehaviour
                 GetComponent<Renderer>().material = Controller.GetComponent<Shift>().BActive;
                 GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
                 GetComponent<MeshRenderer>().receiveShadows = true;
-                GetComponent<BoxCollider>().enabled = true;
+                if (GetComponent<BoxCollider>())
+                {
+                    GetComponent<BoxCollider>().enabled = true;
+                }
+                else if (GetComponent<MeshCollider>())
+                {
+                    GetComponent<MeshCollider>().enabled = true;
+                }
             }
             if (!Controller.GetComponent<Shift>().BlueActive)
             {
                 GetComponent<Renderer>().material = Controller.GetComponent<Shift>().BInactive;
                 GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
                 GetComponent<MeshRenderer>().receiveShadows = false;
-                GetComponent<BoxCollider>().enabled = false;
+                if (GetComponent<BoxCollider>())
+                {
+                    GetComponent<BoxCollider>().enabled = false;
+                }
+                else if (GetComponent<MeshCollider>())
+                {
+                    GetComponent<MeshCollider>().enabled = false;
+                }
             }
         }
     }
