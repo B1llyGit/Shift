@@ -13,13 +13,12 @@ public class ThirdPersonMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
 
-    public float speed = 400;
-    public float sprintSpeed = 800;
+    public float speed = 12;
+    public float sprintSpeed = 24;
     public float gravity = Physics.gravity.y;
-    //public float gravity = -9.81f;
-    public float jumpHeight = 200;
+    public float jumpHeight = 3;
     Vector3 velocity;
-    public bool isGrounded;
+    bool isGrounded;
     public bool floating = false;
 
     public Transform groundCheck;
@@ -44,24 +43,16 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         //Jumping
-        if (!floating)
-        {
-            isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-        }
-        else
-        {
-            isGrounded = false;
-        }
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         if (isGrounded && velocity.y < 0)
         {
-            velocity.y = -2f;
+            velocity.y = -6f;
         }
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -1 * gravity);
-            speed = 400f; // Speeds Original value - value here needs to match "speed"
+            velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
 
         //Gravity
@@ -84,14 +75,14 @@ public class ThirdPersonMovement : MonoBehaviour
         }
 
         //Sprint
-        if (Input.GetButtonDown("Sprint") && isGrounded)
+        if (Input.GetButtonDown("Sprint"))
         {
             speed = sprintSpeed;
         }
        
         if (Input.GetButtonUp("Sprint"))
         {
-            speed = 400f; // Speeds Original value - value here needs to match "speed"
+            speed = 5f; // Speeds Original value - value here needs to match "speed"
         }
     }
 }
