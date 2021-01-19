@@ -9,7 +9,7 @@ public class Interact : MonoBehaviour
     void Update()
     {
         RaycastHit Target;
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetButtonDown("Interact"))
         {
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Target))
             {

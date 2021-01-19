@@ -7,7 +7,7 @@ public class TelePortTest : MonoBehaviour
     public GameObject teleportTarget;
     public GameObject thePlayer;
     
-    //Plays Clip On Collision with Player
+    //Teleports Player on Collision
     private void OnTriggerEnter (Collider other)  
     {
         thePlayer.transform.position = teleportTarget.transform.position;
