@@ -1477,7 +1477,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640733028}
-  m_LocalRotation: {x: 0.2524406, y: 0.00000007764696, z: -0.000000043249678, w: 0.9676124}
+  m_LocalRotation: {x: 0.2524406, y: 0.00000007207362, z: -0.000000038167265, w: 0.9676124}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2913,7 +2913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1326632872}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.59, y: 3.76, z: 1.08}
+  m_LocalPosition: {x: -27.59, y: 4.3, z: 1.08}
   m_LocalScale: {x: 2.9697726, y: 1.3906554, z: 2.9697726}
   m_Children: []
   m_Father: {fileID: 1257120787}
@@ -3296,7 +3296,7 @@ GameObject:
   - component: {fileID: 1485701646}
   - component: {fileID: 1485701645}
   m_Layer: 8
-  m_Name: ConfigurableJoint
+  m_Name: HingeJoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
