@@ -37,10 +37,6 @@ public class ThirdPersonMovement : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
         }
 
-        else
-        { 
-            Cursor.lockState = CursorLockMode.Locked;
-        }
 
         //Jumping
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
