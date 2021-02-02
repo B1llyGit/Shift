@@ -27,6 +27,16 @@ public class ThirdPersonMovement : MonoBehaviour
 
     float turnSmoothVelocity;
     public float turnSmoothTime = 0.1f;
+    public Vector3 StartPosition;
+    public Quaternion StartRotation;
+
+    void Start()
+    {
+        StartPosition = transform.position;
+        StartRotation = transform.rotation;
+        Debug.Log(StartPosition);
+        Debug.Log(StartRotation);
+    }
 
     // Update is called once per frame
     void Update()
