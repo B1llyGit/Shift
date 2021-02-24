@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class OnInteractPlayAudio : MonoBehaviour
 {
-
     public AudioSource teleport;
 
     void Start()
@@ -16,12 +15,12 @@ public class OnInteractPlayAudio : MonoBehaviour
     {
 
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.name == "ThirdPersonPlayer")
         {
             teleport.Play();
-
             Destroy (collision.gameObject);
         }
     }

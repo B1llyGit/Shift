@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class DoorToLevel : MonoBehaviour
 {
-
     public string SceneToLoad;
     // Start is called before the first frame update
     void Start()
@@ -20,15 +19,10 @@ public class DoorToLevel : MonoBehaviour
 
     }
 
-
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("loading menu");
         SceneManager.LoadScene(SceneToLoad);
-
-
-
     }
-
 
 }

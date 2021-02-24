@@ -10,6 +10,7 @@ using UnityEngine.InputSystem;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
+    private InputAction PlayerInput;
     public CharacterController controller;
     public Transform cam;
 
@@ -17,6 +18,7 @@ public class ThirdPersonMovement : MonoBehaviour
     public float sprintSpeed = 24;
     public float gravity = Physics.gravity.y;
     public float jumpHeight = 3;
+    //private Vector3 direction; 
     Vector3 velocity;
     bool isGrounded;
     public bool floating = false;
@@ -41,24 +43,11 @@ public class ThirdPersonMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Lock Cursor to Center of Screen
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
-
-
         //Jumping
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
-
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -6f;
-        }
-
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
 
         //Gravity
@@ -80,6 +69,11 @@ public class ThirdPersonMovement : MonoBehaviour
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
 
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+
         //Sprint
         if (Input.GetButtonDown("Sprint"))
         {
@@ -88,8 +82,24 @@ public class ThirdPersonMovement : MonoBehaviour
        
         if (Input.GetButtonUp("Sprint"))
         {
-            speed = 5f; // Speeds Original value - value here needs to match "speed"
+            speed = 5f;
         }
     }
+
+    /*public void OnMove(InputValue InputVertical, InputValue InputHorizontal)
+    {
+        Horizontal = InputHorizontal.Get<float>();
+        Vertical = InputVertical.Get<float>();
+        direction = new Vector3(Horizontal, 0f, Vertical).normalized;
+    }*/
+
+    public void OnJump()
+    {
+        if (isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+        }
+    }
+
 }
 

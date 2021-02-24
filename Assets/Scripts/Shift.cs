@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Shift : MonoBehaviour
 {
+    private InputAction PlayerInput;
+
     public bool RedActive;
     public bool BlueActive;
 
@@ -17,14 +20,10 @@ public class Shift : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnShift()
     {
-        if (Input.GetButtonDown("Shift"))
-        {
-            RedActive = !RedActive;
-            BlueActive = !BlueActive;
-            print("Lmao nice");
-        }
+        RedActive = !RedActive;
+        BlueActive = !BlueActive;
+        print("Lmao nice");
     }
 }

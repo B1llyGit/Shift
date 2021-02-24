@@ -10,14 +10,9 @@ public class ScrollingUvs : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         float OffsetX = Time.time * ScrollX;
         float OffsetY = Time.time * ScrollY;
 
-        GetComponent<Renderer> ().material.mainTextureOffset = new Vector2(OffsetX, OffsetY);
-
-
-
-
+        GetComponent<Renderer>().material.mainTextureOffset = new Vector2(OffsetX, OffsetY);
     }
 }
