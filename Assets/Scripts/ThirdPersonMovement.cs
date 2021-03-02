@@ -21,6 +21,7 @@ public class ThirdPersonMovement : MonoBehaviour
     //private Vector3 direction; 
     Vector3 velocity;
     bool isGrounded;
+    private int jumpCount = 0;
     public bool floating = false;
 
     public Transform groundCheck;
@@ -48,6 +49,7 @@ public class ThirdPersonMovement : MonoBehaviour
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -6f;
+            jumpCount = 0;
         }
 
         //Gravity
@@ -95,8 +97,10 @@ public class ThirdPersonMovement : MonoBehaviour
 
     public void OnJump()
     {
-        if (isGrounded)
+        print(jumpCount);
+        if (isGrounded || jumpCount == 1)
         {
+            jumpCount++;
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
     }
