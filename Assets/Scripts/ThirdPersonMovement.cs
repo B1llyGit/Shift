@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 
-
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Security.Cryptography;
@@ -21,7 +20,7 @@ public class ThirdPersonMovement : MonoBehaviour
     //private Vector3 direction; 
     Vector3 velocity;
     bool isGrounded;
-    private int jumpCount = 0;
+    private int jumpCount = 2;
     public bool floating = false;
 
     public Transform groundCheck;
@@ -39,6 +38,7 @@ public class ThirdPersonMovement : MonoBehaviour
         StartRotation = transform.rotation;
         Debug.Log(StartPosition);
         Debug.Log(StartRotation);
+        print(jumpCount);
     }
 
     // Update is called once per frame
@@ -49,7 +49,8 @@ public class ThirdPersonMovement : MonoBehaviour
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -6f;
-            jumpCount = 0;
+            jumpCount = 2;
+            print(jumpCount);
         }
 
         //Gravity
@@ -98,9 +99,9 @@ public class ThirdPersonMovement : MonoBehaviour
     public void OnJump()
     {
         print(jumpCount);
-        if (isGrounded || jumpCount == 1)
+        if (jumpCount > 0)
         {
-            jumpCount++;
+            jumpCount--;
             velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
         }
     }
