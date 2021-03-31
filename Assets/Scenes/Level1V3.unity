@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17982501, g: 0.16252747, b: 0.17022187, a: 1}
+  m_IndirectSpecularColor: {r: 0.17981607, g: 0.16252986, b: 0.17022237, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -920,7 +920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 215}
+  m_AnchoredPosition: {x: 0, y: 159}
   m_SizeDelta: {x: 551.07, y: 129.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &107819776
@@ -1018,14 +1018,14 @@ RectTransform:
   m_GameObject: {fileID: 124017838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49000055, y: 0.49000055, z: 0.49000055}
+  m_LocalScale: {x: 0.30545786, y: 0.30545786, z: 0.30545786}
   m_Children: []
   m_Father: {fileID: 1000940690}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 271, y: -101}
+  m_AnchoredPosition: {x: 75, y: -101}
   m_SizeDelta: {x: 1024, y: 684}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &124017840
@@ -2483,7 +2483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 446, y: 159}
+  m_AnchoredPosition: {x: 341.6, y: -40}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &387567629
@@ -2538,7 +2538,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level01
+          m_StringArgument: Tutorial v1
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1249811496}
@@ -3827,14 +3827,14 @@ RectTransform:
   m_GameObject: {fileID: 582461415}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.49000055, y: 0.49000055, z: 0.49000055}
+  m_LocalScale: {x: 0.31112716, y: 0.31112716, z: 0.31112716}
   m_Children: []
   m_Father: {fileID: 1000940690}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -250, y: -101}
+  m_AnchoredPosition: {x: -260.52997, y: -101}
   m_SizeDelta: {x: 1024, y: 684}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &582461417
@@ -5893,7 +5893,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Level01
+  m_Text: Tutorial
 --- !u!222 &810956316
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6108,7 +6108,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SandBox
+  m_Text: Main Screen
 --- !u!222 &825367930
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6764,7 +6764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1000940690
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13836,7 +13836,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278, y: 159}
+  m_AnchoredPosition: {x: 341.9, y: -105}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1329407591
@@ -13891,7 +13891,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: SandBox
+          m_StringArgument: Main Screen
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1249811496}
@@ -15669,7 +15669,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 446, y: 120}
+  m_AnchoredPosition: {x: 343, y: -170}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1741437730
@@ -18480,22 +18480,22 @@ PrefabInstance:
     - target: {fileID: 2472056639647525283, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.010625582
+      value: 0.010622918
       objectReference: {fileID: 0}
     - target: {fileID: 2472056639647525283, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0013084282
+      value: -0.0013081012
       objectReference: {fileID: 0}
     - target: {fileID: 2472056639647525283, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.037125047
+      value: 0.037125044
       objectReference: {fileID: 0}
     - target: {fileID: 2472056639647525283, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.99925333
+      value: 0.9992534
       objectReference: {fileID: 0}
     - target: {fileID: 2472056639647525283, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
@@ -18515,22 +18515,22 @@ PrefabInstance:
     - target: {fileID: 2472056639981918668, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.04267784
+      value: 0.042677846
       objectReference: {fileID: 0}
     - target: {fileID: 2472056639981918668, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.010696083
+      value: -0.0106934
       objectReference: {fileID: 0}
     - target: {fileID: 2472056639981918668, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00045693287
+      value: 0.00045681553
       objectReference: {fileID: 0}
     - target: {fileID: 2472056639981918668, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9990316
+      value: 0.99903154
       objectReference: {fileID: 0}
     - target: {fileID: 2472056639981918668, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
@@ -18630,17 +18630,17 @@ PrefabInstance:
     - target: {fileID: 2472056640281056815, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.010547471
+      value: 0.010544826
       objectReference: {fileID: 0}
     - target: {fileID: 2472056640281056815, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0018346149
+      value: -0.0018341597
       objectReference: {fileID: 0}
     - target: {fileID: 2472056640281056815, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9961756
+      value: 0.99617565
       objectReference: {fileID: 0}
     - target: {fileID: 2472056640281056815, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
@@ -18660,17 +18660,17 @@ PrefabInstance:
     - target: {fileID: 2472056640373004367, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000014901159
+      value: -0.000000018626451
       objectReference: {fileID: 0}
     - target: {fileID: 2472056640373004367, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000071595414
+      value: -0.000000002240995
       objectReference: {fileID: 0}
     - target: {fileID: 2472056640373004367, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -9.3132246e-10
+      value: 0.000000058673322
       objectReference: {fileID: 0}
     - target: {fileID: 2472056640373004367, guid: c435149275e458b48a86d35853c458cf,
         type: 3}
