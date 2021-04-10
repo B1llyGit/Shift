@@ -12,6 +12,11 @@ public class DoorOpening : MonoBehaviour
         {
             theAnimationController.SetBool("DoorOpen", true);
         }
-        
+
+        else if (other.CompareTag("Player"))
+            {
+                theAnimationController.SetBool("DoorHubOpen", true);
+            }
+
     }
 }
