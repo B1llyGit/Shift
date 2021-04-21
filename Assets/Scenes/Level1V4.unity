@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17982501, g: 0.16252747, b: 0.17022187, a: 1}
+  m_IndirectSpecularColor: {r: 0.17981607, g: 0.16252986, b: 0.17022237, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -167,7 +167,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71186060}
-  m_LocalRotation: {x: 0.08671288, y: 0.013115593, z: -0.0022813114, w: 0.9961444}
+  m_LocalRotation: {x: 0.086715624, y: 0.0105447825, z: -0.0018341478, w: 0.9961757}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5208,7 +5208,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179517676}
-  m_LocalRotation: {x: -0.000000014901159, y: 0.00000004470348, z: 1.7462297e-10,
+  m_LocalRotation: {x: -0.0000000037252899, y: 0.0000000456348, z: -0.000000002852175,
     w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -5394,7 +5394,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308525421}
-  m_LocalRotation: {x: 0.042676415, y: -0.013300449, z: 0.00056818034, w: 0.9990003}
+  m_LocalRotation: {x: 0.04267775, y: -0.010693385, z: 0.00045680994, w: 0.99903154}
   m_LocalPosition: {x: 0.00000011920929, y: 0.84000015, z: -1.9999967}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10897,6 +10897,8 @@ GameObject:
   - component: {fileID: 429022341}
   - component: {fileID: 429022340}
   - component: {fileID: 429022339}
+  - component: {fileID: 429022345}
+  - component: {fileID: 429022344}
   m_Layer: 0
   m_Name: Third Person Player
   m_TagString: Player
@@ -10994,6 +10996,41 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -21.543, z: 0}
+--- !u!95 &429022344
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429022338}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!111 &429022345
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 429022338}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 1827226128182048838, guid: 05c5a1a00852d5344a4a9268cea47d63,
+    type: 3}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &476221377 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3699a537a3067904c9d8270636d381df,
@@ -31735,7 +31772,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047595264}
-  m_LocalRotation: {x: 0.037123892, y: 0.013212723, z: -0.0016269963, w: 0.999222}
+  m_LocalRotation: {x: 0.03712506, y: 0.010622859, z: -0.0013080838, w: 0.9992534}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
