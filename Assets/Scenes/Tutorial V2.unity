@@ -853,7 +853,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71186060}
-  m_LocalRotation: {x: 0.08671557, y: 0.010547402, z: -0.0018346044, w: 0.9961756}
+  m_LocalRotation: {x: 0.08671557, y: 0.0105474545, z: -0.0018346134, w: 0.9961756}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1123,6 +1123,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &93260716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 93260717}
+  m_Layer: 0
+  m_Name: Sphere SpawnPos
+  m_TagString: Sphere
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &93260717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93260716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.082, y: 17.61, z: -127.93}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 40
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &102010958
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6784,7 +6814,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179517676}
-  m_LocalRotation: {x: -0.000000026077029, y: -0.0000014323739, z: 0.00000012278905,
+  m_LocalRotation: {x: -0.00000001862645, y: -0.0000014323739, z: 0.00000012278905,
     w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32068,7 +32098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee907445c94d3714fa9ffe4af1770abd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BallReset: {fileID: 0}
+  BallReset: {fileID: 93260716}
 --- !u!1001 &701748135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49941,7 +49971,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047595264}
-  m_LocalRotation: {x: 0.037125036, y: 0.0106255505, z: -0.0013084181, w: 0.99925333}
+  m_LocalRotation: {x: 0.037125036, y: 0.010625519, z: -0.001308414, w: 0.99925333}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -89265,8 +89295,8 @@ MonoBehaviour:
     m_VirtualCamera: {fileID: 1149169549}
     m_ActivateAfter: 0
     m_MinDuration: 0
-  - m_FullHash: -440538
-    m_VirtualCamera: {fileID: 1606321929}
+  - m_FullHash: 46219746
+    m_VirtualCamera: {fileID: 0}
     m_ActivateAfter: 0
     m_MinDuration: 0
   m_DefaultBlend:
