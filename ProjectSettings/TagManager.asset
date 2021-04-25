@@ -9,6 +9,7 @@ TagManager:
   - Dialogue
   - Fog
   - Sphere
+  - BatteryTrigger
   layers:
   - Default
   - TransparentFX

@@ -13,8 +13,8 @@ public class ThirdPersonMovement : MonoBehaviour
     public CharacterController controller;
     public Transform cam;
 
-    public float speed = 12;
-    public float sprintSpeed = 24;
+    public float speed = 5;
+    public float sprintSpeed = 8;
     public float gravity = Physics.gravity.y;
     public float jumpHeight = 3;
     //private Vector3 direction; 
