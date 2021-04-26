@@ -16,9 +16,17 @@ public class BatteryScript : MonoBehaviour
 
     //The Waypoint Activated upon task completion.
     public GameObject Waypoint;
+    public GameObject SoundTrigger;
 
-    //The Door trigger Activated upon task completion.
+    //The Door triggers Activated upon task completion.
     public GameObject DoorTrigger;
+    public GameObject EndDoorTrigger;
+
+  
+
+    //Battery Audio Player and Clips
+    AudioSource BatteryPlayer;
+    public AudioClip LVLup;
 
     // Start is called before the first frame update
     void Start()
@@ -35,19 +43,26 @@ public class BatteryScript : MonoBehaviour
         BatteryLevel = DestroyTrigger.BatLevel;
 
         // Change the material each battery block when BatteryLevel == 1,2,3.
+        //Play the correct miss response.
         if (BatteryLevel == 1)
         {
+            
             BatteryBlock1.GetComponent<MeshRenderer>().material = OnMat;
+            
         }
         if (BatteryLevel == 2)
         {
             BatteryBlock2.GetComponent<MeshRenderer>().material = OnMat;
+            
         }
         if (BatteryLevel == 3)
         {
             BatteryBlock3.GetComponent<MeshRenderer>().material = OnMat;
             DoorTrigger.SetActive(true);
+            EndDoorTrigger.SetActive(true);
             Waypoint.SetActive(true);
+            EndDoorTrigger.SetActive(true);
+
         }
     }
 }

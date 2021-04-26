@@ -11,7 +11,10 @@ public class UIPuzzle : MonoBehaviour
     Animator SwapAnim;
     public GameObject Player;
     CharacterController PlayerCont;
-
+    public AudioSource MissPlayer;
+    public AudioClip MissPuzzleExplain;
+    AudioSource SoundPlayer;
+    
 
     public bool PlayingPuzzle = false;
     public bool colliding;
@@ -24,6 +27,8 @@ public class UIPuzzle : MonoBehaviour
         InteractUI.SetActive(false);
         colliding = false;
         PlayerCont = Player.GetComponent<CharacterController>();
+        //SoundPlayer = GetComponent<AudioSource>();
+
     }
 
     void Update()
@@ -33,7 +38,7 @@ public class UIPuzzle : MonoBehaviour
             if (PlayingPuzzle == false)
             {
                 CameraSwap();
-                
+                MissPlayer.PlayOneShot(MissPuzzleExplain, 1.0F);
             }
 
             else if (PlayingPuzzle == true)
@@ -71,6 +76,7 @@ public class UIPuzzle : MonoBehaviour
         PuzzlePanel.SetActive(true);
         PlayerCont.enabled = false;
         PlayingPuzzle = true;
+        
         InteractUI.SetActive(false);
 
     }
