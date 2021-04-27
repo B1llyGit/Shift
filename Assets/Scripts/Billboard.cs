@@ -21,7 +21,7 @@ public class Billboard : MonoBehaviour
 
         if (!useStaticBillboard)
         { 
-        transform.LookAt(theCam.transform);
+        
         }
         else
         {

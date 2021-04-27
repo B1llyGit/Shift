@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class DimensionUpdate : MonoBehaviour
 {
+  
     private GameObject Controller;
     public bool Red;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +25,7 @@ public class DimensionUpdate : MonoBehaviour
                 GetComponent<Renderer>().material = Controller.GetComponent<Shift>().RActive;
                 GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
                 GetComponent<MeshRenderer>().receiveShadows = true;
+
                 if (GetComponent<BoxCollider>())
                 {
                     GetComponent<BoxCollider>().enabled = true;
@@ -54,6 +57,7 @@ public class DimensionUpdate : MonoBehaviour
                 GetComponent<Renderer>().material = Controller.GetComponent<Shift>().BActive;
                 GetComponent<MeshRenderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.On;
                 GetComponent<MeshRenderer>().receiveShadows = true;
+
                 if (GetComponent<BoxCollider>())
                 {
                     GetComponent<BoxCollider>().enabled = true;

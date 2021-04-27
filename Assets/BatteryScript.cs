@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BatteryScript : MonoBehaviour
 {
@@ -28,6 +29,12 @@ public class BatteryScript : MonoBehaviour
     AudioSource BatteryPlayer;
     public AudioClip LVLup;
 
+    // Objective Stuff
+    public GameObject ObjText;
+    public string ObjContents1;
+    public string ObjContents2;
+    public string ObjContents3;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,12 +55,12 @@ public class BatteryScript : MonoBehaviour
         {
             
             BatteryBlock1.GetComponent<MeshRenderer>().material = OnMat;
-            
+            ObjText.GetComponent<Text>().text = ObjContents1;
         }
         if (BatteryLevel == 2)
         {
             BatteryBlock2.GetComponent<MeshRenderer>().material = OnMat;
-            
+            ObjText.GetComponent<Text>().text = ObjContents2;
         }
         if (BatteryLevel == 3)
         {
@@ -61,7 +68,8 @@ public class BatteryScript : MonoBehaviour
             DoorTrigger.SetActive(true);
             EndDoorTrigger.SetActive(true);
             Waypoint.SetActive(true);
-            EndDoorTrigger.SetActive(true);
+            SoundTrigger.SetActive(true);
+            ObjText.GetComponent<Text>().text = ObjContents3;
 
         }
     }

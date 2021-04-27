@@ -10,6 +10,7 @@ public class CameraSwap : MonoBehaviour
 
     public AudioSource soundPlayer;
     public AudioClip miss;
+    public GameObject HUDPanel;
 
     // Start is called before the first frame update
     void Start()
@@ -24,5 +25,6 @@ public class CameraSwap : MonoBehaviour
         SwapAnim.SetBool("IntroCutscene", false);
         GetComponent<Animator>().enabled = false;
         soundPlayer.PlayOneShot(miss, 1.0F);
+        HUDPanel.SetActive(true);
     }
 }

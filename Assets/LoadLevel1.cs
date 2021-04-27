@@ -19,7 +19,7 @@ public class LoadLevel1 : MonoBehaviour
     {
         if (colliding == true && Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene("Level1V6"); // CHANGE THIS WHEN SCENE NAME CHANGES
+            SceneManager.LoadScene("Level01"); // CHANGE THIS WHEN SCENE NAME CHANGES
         }
 
     }
