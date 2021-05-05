@@ -840,7 +840,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71186060}
-  m_LocalRotation: {x: 0.18480486, y: 0.010314282, z: -0.002868674, w: 0.982717}
+  m_LocalRotation: {x: 0.18480486, y: 0.010314299, z: -0.0028686784, w: 0.982717}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6878,7 +6878,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179517676}
-  m_LocalRotation: {x: 0.07141946, y: -0.0034723557, z: 0.000549211, w: 0.9974402}
+  m_LocalRotation: {x: 0.07141946, y: -0.003465391, z: 0.00054810947, w: 0.9974402}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15930,7 +15930,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 215d5af12c1f6ed4c862b9ed64bcd3bf, type: 2}
+  - {fileID: 2100000, guid: 73a978b45a88bfe40b77227e809e9317, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21250,7 +21250,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 74e46da11f8721440aee7e408cea23c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a7863e87d3addcb48bf39cfbbd7adfee, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -49211,7 +49211,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047595264}
-  m_LocalRotation: {x: 0.119782895, y: 0.010480606, z: -0.0021842152, w: 0.99274236}
+  m_LocalRotation: {x: 0.11978288, y: 0.010480606, z: -0.0021842152, w: 0.99274236}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
