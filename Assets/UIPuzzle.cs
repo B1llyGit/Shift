@@ -33,7 +33,7 @@ public class UIPuzzle : MonoBehaviour
 
     void Update()
     {
-        if (colliding == true && Input.GetKeyDown(KeyCode.E))
+        if (colliding == true && (Input.GetKeyDown(KeyCode.E)))
         {
             if (PlayingPuzzle == false)
             {
@@ -48,8 +48,6 @@ public class UIPuzzle : MonoBehaviour
         }
 
     }
-
-
 
     private void OnTriggerEnter(Collider other)
     {
